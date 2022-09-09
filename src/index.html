@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="../dist/output.css">
+  <script src="https://kit.fontawesome.com/1cf331be54.js" crossorigin="anonymous"></script>
   <title>Fylo landing page with dark theme and features grid</title>
 </head>
 <body class=" text-white">
@@ -116,62 +117,70 @@
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
               questions, our support team would be happy to help you.</p>
             <form method="post" class="mt-9 lg:flex lg:items-center lg:gap-7">
-              <input type="email" placeholder="email@example.com" class="py-4 px-8 rounded-full w-full placeholder:text-sm text-darkBlue">
+              <div class="w-full relative">
+                <input type="email" placeholder="email@example.com" class="py-4 w-full px-8 rounded-full placeholder:text-sm text-darkBlue">
+                <p class="font-black text-sm absolute left-8 mt-2 text-lightred">Please enter a valid email address</p>
+              </div>
               <input type="submit" value="Get Started For Free" class="bg-blue p-4 w-full mt-5 rounded-full font-black lg:mt-0 lg:w-auto lg:px-8">
             </form>
           </div>
         </section>
       </div>
     </main>
-    <footer class="bg-footer pt-52 px-4">
-      <img src="./images/logo.svg" alt="logo" class="mb-12 ml-5">
-      <div>
-        <div class="flex items-start">
-          <div class="w-7 h-7 flex-shrink-0 mr-6"> 
-            <img src="./images/icon-location.svg" alt="location icon">
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua</p>
-        </div>
-        <div>
-          <div class="flex items-start">
-            <div class="w-7 h-7 flex-shrink-0 mr-6">
-              <img src="./images/icon-phone.svg" alt="phone icon">
+    <div class="bg-footer">
+      <footer class="container mx-auto pt-52 px-4 lg:flex lg:flex-col justify-start items-start lg:pb-7">
+        <img src="./images/logo.svg" alt="logo" class="mb-12 ml-5">
+        <div class="lg:flex lg:items-start lg:justify-between w-full">
+  
+          <div class="lg:flex lg:gap-11">
+            <div class="flex items-start">
+              <div class="w-7 h-7 flex-shrink-0 mr-6"> 
+                <img src="./images/icon-location.svg" alt="location icon">
+              </div>
+              <p class="w-80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                dolore magna aliqua</p>
             </div>
-            <p>+1-543-123-4567</p>
-          </div>
-          <div class="flex items-start">
-            <div class="w-7 h-7 flex-shrink-0 mr-6">
-              <img src="./images/icon-email.svg" alt="mail icon">
+            <div>
+              <div class="flex items-start my-6 lg:my-0 lg:mb-6">
+                <div class="w-7 h-7 flex-shrink-0 mr-6">
+                  <img src="./images/icon-phone.svg" alt="phone icon">
+                </div>
+                <p>+1-543-123-4567</p>
+              </div>
+              <div class="flex items-start">
+                <div class="w-7 h-7 flex-shrink-0 mr-6">
+                  <img src="./images/icon-email.svg" alt="mail icon">
+                </div>
+                <p>example@fylo.com</p>
+              </div>
             </div>
-            <p>example@fylo.com</p>
+          </div>
+          <div class="lg:flex lg:items-start lg:gap-20">
+            <ul class="my-16 grid gap-4 lg:my-0">
+              <li class="cursor-pointer"><a href="/"></a>About Us</li>
+              <li class="cursor-pointer"><a href="/"></a>Jobs</li>
+              <li class="cursor-pointer"><a href="/"></a>Press</li>
+              <li class="cursor-pointer"><a href="/"></a>Blog</li>
+            </ul>
+            <ul class="grid gap-4">
+              <li class="cursor-pointer"><a href="/"></a>Contact Us</li>
+              <li class="cursor-pointer"><a href="/"></a>Terms</li>
+              <li class="cursor-pointer"><a href="/"></a>Privacy</li>
+            </ul>
+          </div>
+          <div class="flex justify-center items-center gap-4 mt-16 pb-8 lg:mt-0">
+            <div class="w-10 h-10 border flex justify-center items-center rounded-full cursor-pointer">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="w-10 h-10 border flex justify-center items-center rounded-full cursor-pointer">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="w-10 h-10 border flex justify-center items-center rounded-full cursor-pointer">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <ul>
-          <li><a href="/"></a>About Us</li>
-          <li><a href="/"></a>Jobs</li>
-          <li><a href="/"></a>Press</li>
-          <li><a href="/"></a>Blog</li>
-        </ul>
-        <ul>
-          <li><a href="/"></a>Contact Us</li>
-          <li><a href="/"></a>Terms</li>
-          <li><a href="/"></a>Privacy</li>
-        </ul>
-      </div>
-      <div>
-        <div>
-          f
-        </div>
-        <div>
-          t
-        </div>
-        <div>
-          i
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 </body>
 </html>
