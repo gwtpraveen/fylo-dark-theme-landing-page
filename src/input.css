@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cta {
+    width: fit-content;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid cyan;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+
+.cta:hover {
+    border-color: white;
+}
+
+/* .details {
+    position: relative;
+}
+
+@media (min-width: 1028px) {
+    .details::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        background-image: url(../src/images/bg-curvy-desktop.svg);
+        height: 100%;
+        left: 50%;
+        background-repeat: no-repeat;
+        top: -22%;
+        transform: translateX(-50%);
+        z-index: 1;
+        background-position-x: center;
+        background-size: contain;
+    }
+} */
