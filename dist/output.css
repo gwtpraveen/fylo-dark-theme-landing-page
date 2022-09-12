@@ -1020,26 +1020,12 @@ video {
   border-color: white;
 }
 
-/* .details {
-    position: relative;
+.hero {
+  background-image: url(../src/images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
 }
-
-@media (min-width: 1028px) {
-    .details::before {
-        content: "";
-        position: absolute;
-        width: 100vw;
-        background-image: url(../src/images/bg-curvy-desktop.svg);
-        height: 100%;
-        left: 50%;
-        background-repeat: no-repeat;
-        top: -22%;
-        transform: translateX(-50%);
-        z-index: 1;
-        background-position-x: center;
-        background-size: contain;
-    }
-} */
 
 .placeholder\:text-sm::-moz-placeholder {
   font-size: 0.875rem;
@@ -1104,6 +1090,10 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .lg\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1134,10 +1124,6 @@ video {
 
   .lg\:items-center {
     align-items: center;
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between;
   }
 
   .lg\:justify-around {
@@ -1181,5 +1167,23 @@ video {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
   }
 }
